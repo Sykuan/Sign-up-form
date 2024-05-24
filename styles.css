@@ -1,0 +1,91 @@
+/*
+    Variables declaration on root
+*/
+
+:root {
+    --dark-blue: #025492;
+    --lime-green: #7ada95;
+    --light-blue: #31b4f2;
+}
+
+/*
+    General CSS
+*/
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+/*
+    image
+*/
+
+.background {
+    display: flex;
+    max-width: 40vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/*
+    Form section
+*/
+.form_section {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    padding: 5vh;
+}
+
+.form_content {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.form_data {
+    display: grid;
+    row-gap: 2vh;
+    column-gap: 4vh;
+    grid-template: 25% 25% 25% / 40% 40%; 
+}
+
+.form_flex {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin-top: 4vh;
+    padding: 3vh 2vh;
+    max-width: 30%;
+    background-color: var(--lime-green);
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: var(--dark-blue);
+}
+
+.existing_account {
+    display: flex;
+    gap: 2vh;
+}
+
+/*
+    password
+*/
+
+.password:invalid {
+    border: solid red 2px;
+}
+
+.password:focus {
+    box-shadow: 10px 10px var(--dark-blue);
+    z-index: 10;
+}
+
+#errorMessage {
+    color: red;
+}
